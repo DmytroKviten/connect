@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Реєстрація</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="intro" id="intro">
+        <div class="form-wrapper">
+            <h2>Реєстрація</h2>
+            <form id="registrationForm" action="register.php" method="POST">
+                <input type="text" class="form-control" name="login" placeholder="Введіть логін" required><br>
+                <input type="text" class="form-control" name="name" placeholder="Введіть ім'я" required><br>
+                <input type="password" class="form-control" name="password" placeholder="Введіть пароль" required><br>
+                <button type="submit">Зареєструватися</button>
+            </form>
+            <div id="registrationMessage"></div>
+        </div>
+    </div>
+
+    
+<script src="three.min.js"></script>
+<script src="vanta.net.min.js"></script>
+<script src="app.js"></script>
+<script src="reg.js"></script>
+
+</body>
+</html>

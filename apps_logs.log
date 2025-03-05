@@ -1,0 +1,448 @@
+2024-05-11 17:20:06,613 - WARNING -  * Debugger is active!
+2024-05-11 17:20:06,616 - INFO -  * Debugger PIN: 907-417-267
+2024-05-11 17:20:13,235 - INFO - Local UTC timestamp sent: 1715437213234
+2024-05-11 17:20:14,187 - INFO - Token retrieved successfully: 417d4a44f89c79534443e48222d99ea0
+2024-05-11 17:20:15,128 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715437214385, 'tid': '957b61750fa111efa6ed16994efa91b4'}
+2024-05-11 17:20:15,132 - INFO - 127.0.0.1 - - [11/May/2024 17:20:15] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-11 17:25:11,207 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-11 17:25:11,655 - WARNING -  * Debugger is active!
+2024-05-11 17:25:11,661 - INFO -  * Debugger PIN: 907-417-267
+2024-05-11 17:25:18,798 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-05-11 17:25:18,799 - INFO - [33mPress CTRL+C to quit[0m
+2024-05-11 17:25:18,803 - INFO -  * Restarting with stat
+2024-05-11 17:25:19,121 - WARNING -  * Debugger is active!
+2024-05-11 17:25:19,125 - INFO -  * Debugger PIN: 907-417-267
+2024-05-11 17:25:27,836 - INFO - Local UTC timestamp sent: 1715426727835
+2024-05-11 17:25:28,633 - ERROR - Failed to retrieve the token: {"code":1013,"msg":"request time is invalid","success":false,"t":1715437527894,"tid":"5059444f0fa211efaae33e3874d12f34"}
+2024-05-11 17:25:28,633 - INFO - Tuya time received: 1715437527894
+2024-05-11 17:25:28,633 - INFO - Time difference (Tuya - Local): 10800059 milliseconds
+2024-05-11 17:25:28,635 - INFO - 127.0.0.1 - - [11/May/2024 17:25:28] "[31m[1mGET /sensor_data/bfea7838726f885481awsk HTTP/1.1[0m" 401 -
+2024-05-11 17:27:35,384 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-11 17:27:35,449 - INFO -  * Restarting with stat
+2024-05-11 17:27:35,851 - WARNING -  * Debugger is active!
+2024-05-11 17:27:35,855 - INFO -  * Debugger PIN: 907-417-267
+2024-05-11 17:27:38,806 - INFO - Local UTC timestamp sent: 1715426858806
+2024-05-11 17:27:39,703 - INFO - Corrected timestamp to: 1715437658944
+2024-05-11 17:27:39,703 - ERROR - Failed to retrieve the token: {"code":1013,"msg":"request time is invalid","success":false,"t":1715437658944,"tid":"9e75d5d80fa211efa098724a8b78ed1e"}
+2024-05-11 17:27:39,705 - INFO - 127.0.0.1 - - [11/May/2024 17:27:39] "[31m[1mGET /sensor_data/bfea7838726f885481awsk HTTP/1.1[0m" 401 -
+2024-05-11 17:29:41,104 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-11 17:29:41,152 - INFO -  * Restarting with stat
+2024-05-11 17:29:41,497 - WARNING -  * Debugger is active!
+2024-05-11 17:29:41,502 - INFO -  * Debugger PIN: 907-417-267
+2024-05-11 17:29:47,821 - INFO - Local UTC timestamp sent: 1715426987820
+2024-05-11 17:29:48,606 - ERROR - Failed to retrieve the token: {"code":1013,"msg":"request time is invalid","success":false,"t":1715437787868,"tid":"eb4e759d0fa211efa098724a8b78ed1e"}
+2024-05-11 17:29:48,608 - INFO - 127.0.0.1 - - [11/May/2024 17:29:48] "[31m[1mGET /sensor_data/bfea7838726f885481awsk HTTP/1.1[0m" 401 -
+2024-05-11 17:32:53,880 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-11 17:32:53,927 - INFO -  * Restarting with stat
+2024-05-11 17:32:54,352 - WARNING -  * Debugger is active!
+2024-05-11 17:32:54,357 - INFO -  * Debugger PIN: 907-417-267
+2024-05-11 17:32:59,668 - INFO - Timestamp used for the request: 1715437978931
+2024-05-11 17:33:00,438 - INFO - Token retrieved successfully: 417d4a44f89c79534443e48222d99ea0
+2024-05-11 17:33:01,353 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715437980617, 'tid': '5e30b24e0fa311efa6ed16994efa91b4'}
+2024-05-11 17:33:01,355 - INFO - 127.0.0.1 - - [11/May/2024 17:33:01] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-11 17:38:58,060 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-11 17:38:58,111 - INFO -  * Restarting with stat
+2024-05-11 17:38:58,503 - WARNING -  * Debugger is active!
+2024-05-11 17:38:58,507 - INFO -  * Debugger PIN: 907-417-267
+2024-05-11 17:39:36,879 - INFO - 127.0.0.1 - - [11/May/2024 17:39:36] "OPTIONS /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-11 17:39:36,880 - INFO - 127.0.0.1 - - [11/May/2024 17:39:36] "OPTIONS /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-11 17:39:37,146 - INFO - Local UTC timestamp sent: 1715427577146
+2024-05-11 17:39:37,191 - INFO - Local UTC timestamp sent: 1715427577191
+2024-05-11 17:39:37,388 - INFO - Local UTC timestamp sent: 1715427577388
+2024-05-11 17:39:37,692 - INFO - Local UTC timestamp sent: 1715427577692
+2024-05-11 17:39:38,193 - ERROR - Failed to retrieve the token: {"code":1013,"msg":"request time is invalid","success":false,"t":1715438377459,"tid":"4abaacbd0fa411efaae33e3874d12f34"}
+2024-05-11 17:39:38,195 - INFO - 127.0.0.1 - - [11/May/2024 17:39:38] "[31m[1mPOST /sensor_data/bfea7838726f885481awsk HTTP/1.1[0m" 401 -
+2024-05-11 17:39:38,226 - ERROR - Failed to retrieve the token: {"code":1013,"msg":"request time is invalid","success":false,"t":1715438377476,"tid":"4abd0d0f0fa411efa6ed16994efa91b4"}
+2024-05-11 17:39:38,229 - INFO - 127.0.0.1 - - [11/May/2024 17:39:38] "[31m[1mPOST /sensor_data/bfea7838726f885481awsk HTTP/1.1[0m" 401 -
+2024-05-11 17:39:38,360 - ERROR - Failed to retrieve the token: {"code":1013,"msg":"request time is invalid","success":false,"t":1715438377626,"tid":"4ad4609d0fa411efaae33e3874d12f34"}
+2024-05-11 17:39:38,363 - INFO - 127.0.0.1 - - [11/May/2024 17:39:38] "[31m[1mPOST /sensor_data/bfea7838726f885481awsk HTTP/1.1[0m" 401 -
+2024-05-11 17:39:38,609 - ERROR - Failed to retrieve the token: {"code":1013,"msg":"request time is invalid","success":false,"t":1715438377875,"tid":"4afa12d60fa411efa098724a8b78ed1e"}
+2024-05-11 17:39:38,611 - INFO - 127.0.0.1 - - [11/May/2024 17:39:38] "[31m[1mPOST /sensor_data/bfea7838726f885481awsk HTTP/1.1[0m" 401 -
+2024-05-11 17:40:35,987 - INFO - Local UTC timestamp sent: 1715427635987
+2024-05-11 17:40:36,923 - ERROR - Failed to retrieve the token: {"code":1013,"msg":"request time is invalid","success":false,"t":1715438436187,"tid":"6dbc31a80fa411efaae33e3874d12f34"}
+2024-05-11 17:40:36,925 - INFO - 127.0.0.1 - - [11/May/2024 17:40:36] "[31m[1mGET /sensor_data/bfea7838726f885481awsk HTTP/1.1[0m" 401 -
+2024-05-11 17:40:36,928 - INFO - Local UTC timestamp sent: 1715427636928
+2024-05-11 17:40:37,852 - ERROR - Failed to retrieve the token: {"code":1013,"msg":"request time is invalid","success":false,"t":1715438437116,"tid":"6e49d9100fa411efaae33e3874d12f34"}
+2024-05-11 17:40:37,854 - INFO - 127.0.0.1 - - [11/May/2024 17:40:37] "[31m[1mGET /sensor_data/bfea7838726f885481awsk HTTP/1.1[0m" 401 -
+2024-05-11 17:40:54,775 - INFO - Local UTC timestamp sent: 1715427654775
+2024-05-11 17:40:55,832 - ERROR - Failed to retrieve the token: {"code":1013,"msg":"request time is invalid","success":false,"t":1715438455091,"tid":"7900a8e10fa411efa098724a8b78ed1e"}
+2024-05-11 17:40:55,834 - INFO - 127.0.0.1 - - [11/May/2024 17:40:55] "[31m[1mGET /sensor_data/bfea7838726f885481awsk HTTP/1.1[0m" 401 -
+2024-05-11 17:40:55,836 - INFO - Local UTC timestamp sent: 1715427655836
+2024-05-11 17:40:56,581 - ERROR - Failed to retrieve the token: {"code":1013,"msg":"request time is invalid","success":false,"t":1715438455846,"tid":"7973d36d0fa411efa098724a8b78ed1e"}
+2024-05-11 17:40:56,583 - INFO - 127.0.0.1 - - [11/May/2024 17:40:56] "[31m[1mGET /sensor_data/bfea7838726f885481awsk HTTP/1.1[0m" 401 -
+2024-05-11 19:01:58,951 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-05-11 19:01:58,951 - INFO - [33mPress CTRL+C to quit[0m
+2024-05-11 19:01:58,955 - INFO -  * Restarting with stat
+2024-05-11 19:01:59,322 - WARNING -  * Debugger is active!
+2024-05-11 19:01:59,326 - INFO -  * Debugger PIN: 907-417-267
+2024-05-11 19:02:06,866 - INFO - 127.0.0.1 - - [11/May/2024 19:02:06] "OPTIONS /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-11 19:02:06,868 - INFO - 127.0.0.1 - - [11/May/2024 19:02:06] "OPTIONS /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-11 19:02:07,130 - INFO - Local UTC timestamp sent: 1715432527128
+2024-05-11 19:02:07,175 - INFO - Local UTC timestamp sent: 1715432527175
+2024-05-11 19:02:07,974 - ERROR - Failed to retrieve the token: {"code":1013,"msg":"request time is invalid","success":false,"t":1715443327271,"tid":"d10b9fd00faf11ef84794ef92bcf52e1"}
+2024-05-11 19:02:07,976 - INFO - 127.0.0.1 - - [11/May/2024 19:02:07] "[31m[1mPOST /sensor_data/bfea7838726f885481awsk HTTP/1.1[0m" 401 -
+2024-05-11 19:02:08,138 - ERROR - Failed to retrieve the token: {"code":1013,"msg":"request time is invalid","success":false,"t":1715443327436,"tid":"d12549a20faf11efaae33e3874d12f34"}
+2024-05-11 19:02:08,140 - INFO - 127.0.0.1 - - [11/May/2024 19:02:08] "[31m[1mPOST /sensor_data/bfea7838726f885481awsk HTTP/1.1[0m" 401 -
+2024-05-11 19:58:57,544 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-11 19:58:57,611 - INFO -  * Restarting with stat
+2024-05-11 19:58:58,062 - WARNING -  * Debugger is active!
+2024-05-11 19:58:58,067 - INFO -  * Debugger PIN: 907-417-267
+2024-05-11 19:59:02,019 - INFO - Local UTC timestamp sent: 1715435942019
+2024-05-11 19:59:02,816 - ERROR - Failed to retrieve the token: {"code":1013,"msg":"request time is invalid","success":false,"t":1715446742134,"tid":"c476acd80fb711efaae33e3874d12f34"}
+2024-05-11 19:59:02,818 - INFO - 127.0.0.1 - - [11/May/2024 19:59:02] "[31m[1mGET /sensor_data/bfea7838726f885481awsk HTTP/1.1[0m" 401 -
+2024-05-11 19:59:02,917 - INFO - 127.0.0.1 - - [11/May/2024 19:59:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-05-11 19:59:03,743 - INFO - Local UTC timestamp sent: 1715435943743
+2024-05-11 19:59:04,678 - ERROR - Failed to retrieve the token: {"code":1013,"msg":"request time is invalid","success":false,"t":1715446743995,"tid":"c592b1150fb711ef84794ef92bcf52e1"}
+2024-05-11 19:59:04,680 - INFO - 127.0.0.1 - - [11/May/2024 19:59:04] "[31m[1mGET /sensor_data/bfea7838726f885481awsk HTTP/1.1[0m" 401 -
+2024-05-11 20:01:03,318 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-11 20:01:03,404 - INFO -  * Restarting with stat
+2024-05-11 20:01:03,761 - WARNING -  * Debugger is active!
+2024-05-11 20:01:03,765 - INFO -  * Debugger PIN: 907-417-267
+2024-05-11 20:01:09,985 - INFO - Token retrieved successfully: 77deee924b76e88b01a0b99b6b64d5f9
+2024-05-11 20:01:10,898 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715446870218, 'tid': '10ce8b520fb811ef84794ef92bcf52e1'}
+2024-05-11 20:01:10,901 - INFO - 127.0.0.1 - - [11/May/2024 20:01:10] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-11 20:04:38,192 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-11 20:04:38,247 - INFO -  * Restarting with stat
+2024-05-11 20:04:38,667 - WARNING -  * Debugger is active!
+2024-05-11 20:04:38,672 - INFO -  * Debugger PIN: 907-417-267
+2024-05-11 20:04:42,623 - INFO - Local UTC timestamp sent: 1715447081941
+2024-05-11 20:04:43,555 - INFO - Token retrieved successfully: 77deee924b76e88b01a0b99b6b64d5f9
+2024-05-11 20:04:44,479 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715447083799, 'tid': '901bddb30fb811efa6ed16994efa91b4'}
+2024-05-11 20:04:44,480 - INFO - 127.0.0.1 - - [11/May/2024 20:04:44] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-11 20:09:00,189 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-11 20:09:00,242 - INFO -  * Restarting with stat
+2024-05-11 20:09:00,686 - WARNING -  * Debugger is active!
+2024-05-11 20:09:00,691 - INFO -  * Debugger PIN: 907-417-267
+2024-05-11 20:09:10,100 - INFO - Token retrieved successfully: 77deee924b76e88b01a0b99b6b64d5f9
+2024-05-11 20:09:11,042 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715447350364, 'tid': '2efec48f0fb911efaae33e3874d12f34'}
+2024-05-11 20:09:11,044 - INFO - 127.0.0.1 - - [11/May/2024 20:09:11] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-11 20:11:07,950 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-11 20:11:08,007 - INFO -  * Restarting with stat
+2024-05-11 20:11:08,419 - WARNING -  * Debugger is active!
+2024-05-11 20:11:08,424 - INFO -  * Debugger PIN: 907-417-267
+2024-05-11 20:26:20,137 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-11 20:26:20,185 - INFO -  * Restarting with stat
+2024-05-11 20:26:20,572 - WARNING -  * Debugger is active!
+2024-05-11 20:26:20,578 - INFO -  * Debugger PIN: 907-417-267
+2024-05-11 20:26:27,285 - INFO - Token retrieved successfully: 77deee924b76e88b01a0b99b6b64d5f9
+2024-05-11 20:26:28,961 - INFO - Response from Tuya: {'code': 1004, 'msg': 'sign invalid', 'success': False, 't': 1715448388287, 'tid': '99a52b970fbb11efa6ed16994efa91b4'}
+2024-05-11 20:26:28,963 - INFO - 127.0.0.1 - - [11/May/2024 20:26:28] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-11 20:32:02,240 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-11 20:32:02,302 - INFO -  * Restarting with stat
+2024-05-11 20:32:02,671 - WARNING -  * Debugger is active!
+2024-05-11 20:32:02,675 - INFO -  * Debugger PIN: 907-417-267
+2024-05-11 20:32:10,453 - INFO - Token retrieved successfully: 77deee924b76e88b01a0b99b6b64d5f9
+2024-05-11 20:32:11,209 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715448730539, 'tid': '65a4b6280fbc11efa6ed16994efa91b4'}
+2024-05-11 20:32:11,211 - INFO - 127.0.0.1 - - [11/May/2024 20:32:11] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-11 20:56:28,435 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-11 20:56:28,522 - INFO -  * Restarting with stat
+2024-05-11 20:56:28,899 - WARNING -  * Debugger is active!
+2024-05-11 20:56:28,904 - INFO -  * Debugger PIN: 907-417-267
+2024-05-11 20:56:36,453 - INFO - Server time fetched: 1715450195793
+2024-05-11 20:56:37,386 - INFO - Token retrieved successfully: 77deee924b76e88b01a0b99b6b64d5f9
+2024-05-11 20:56:38,152 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715450197492, 'tid': 'd00382ab0fbf11efa098724a8b78ed1e'}
+2024-05-11 20:56:38,154 - INFO - 127.0.0.1 - - [11/May/2024 20:56:38] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-11 20:58:10,110 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-11 20:58:10,176 - INFO -  * Restarting with stat
+2024-05-11 20:58:10,550 - WARNING -  * Debugger is active!
+2024-05-11 20:58:10,554 - INFO -  * Debugger PIN: 907-417-267
+2024-05-11 20:58:16,880 - INFO - Server time fetched: 1715450296221
+2024-05-11 20:58:16,882 - INFO - Signing request at time: 1715450296221
+2024-05-11 20:58:17,806 - INFO - Token retrieved successfully: 77deee924b76e88b01a0b99b6b64d5f9
+2024-05-11 20:58:18,730 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715450298071, 'tid': '0bf6ca780fc011efaae33e3874d12f34'}
+2024-05-11 20:58:18,731 - INFO - 127.0.0.1 - - [11/May/2024 20:58:18] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-11 21:05:47,434 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-11 21:05:47,485 - INFO -  * Restarting with stat
+2024-05-11 21:05:47,828 - WARNING -  * Debugger is active!
+2024-05-11 21:05:47,832 - INFO -  * Debugger PIN: 907-417-267
+2024-05-11 21:05:53,499 - INFO - Adjusted server time: 1715450757843
+2024-05-11 21:05:53,501 - INFO - Signing request at time: 1715450757843
+2024-05-11 21:05:54,847 - INFO - Token retrieved successfully: 77deee924b76e88b01a0b99b6b64d5f9
+2024-05-11 21:05:55,598 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715450754940, 'tid': '1c4758900fc111ef84794ef92bcf52e1'}
+2024-05-11 21:05:55,600 - INFO - 127.0.0.1 - - [11/May/2024 21:05:55] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-11 21:10:59,444 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-11 21:10:59,504 - INFO -  * Restarting with stat
+2024-05-11 21:10:59,944 - WARNING -  * Debugger is active!
+2024-05-11 21:10:59,950 - INFO -  * Debugger PIN: 907-417-267
+2024-05-11 21:11:04,942 - INFO - Adjusted server time: 1715451069287
+2024-05-11 21:11:04,944 - INFO - Signing request at time: 1715451069287
+2024-05-11 21:11:05,881 - INFO - Token retrieved successfully: 77deee924b76e88b01a0b99b6b64d5f9
+2024-05-11 21:11:06,800 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715451066144, 'tid': 'd5c5a9df0fc111efa098724a8b78ed1e'}
+2024-05-11 21:11:06,802 - INFO - 127.0.0.1 - - [11/May/2024 21:11:06] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-11 21:12:16,112 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\ap.py', reloading
+2024-05-11 21:12:16,223 - INFO -  * Restarting with stat
+2024-05-11 21:12:16,841 - WARNING -  * Debugger is active!
+2024-05-11 21:12:16,846 - INFO -  * Debugger PIN: 907-417-267
+2024-05-11 21:13:51,054 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\ap.py', reloading
+2024-05-11 21:13:51,135 - INFO -  * Restarting with stat
+2024-05-11 21:13:51,625 - WARNING -  * Debugger is active!
+2024-05-11 21:13:51,631 - INFO -  * Debugger PIN: 907-417-267
+2024-05-11 21:15:32,839 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-11 21:15:32,885 - INFO -  * Restarting with stat
+2024-05-11 21:15:33,310 - WARNING -  * Debugger is active!
+2024-05-11 21:15:33,314 - INFO -  * Debugger PIN: 907-417-267
+2024-05-11 21:15:35,782 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-05-11 21:15:35,782 - INFO - [33mPress CTRL+C to quit[0m
+2024-05-11 21:15:35,792 - INFO -  * Restarting with stat
+2024-05-11 21:15:36,190 - WARNING -  * Debugger is active!
+2024-05-11 21:15:36,195 - INFO -  * Debugger PIN: 907-417-267
+2024-05-11 21:15:58,092 - INFO - Adjusted server time: 1715451362439
+2024-05-11 21:15:58,094 - INFO - Signing request at time: 1715451362439
+2024-05-11 21:15:58,848 - INFO - Token retrieved successfully: 77deee924b76e88b01a0b99b6b64d5f9
+2024-05-11 21:15:59,761 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715451359108, 'tid': '8464dec50fc211efa098724a8b78ed1e'}
+2024-05-11 21:15:59,763 - INFO - 127.0.0.1 - - [11/May/2024 21:15:59] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-12 19:42:37,144 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-05-12 19:42:37,144 - INFO - [33mPress CTRL+C to quit[0m
+2024-05-12 19:42:37,150 - INFO -  * Restarting with stat
+2024-05-12 19:42:37,552 - WARNING -  * Debugger is active!
+2024-05-12 19:42:37,558 - INFO -  * Debugger PIN: 907-417-267
+2024-05-12 19:43:11,495 - INFO - Adjusted server time: 1715532196591
+2024-05-12 19:43:11,498 - INFO - Signing request at time: 1715532196591
+2024-05-12 19:43:12,528 - INFO - Token retrieved successfully: 63f1632370b28114502049ed898df0a4
+2024-05-12 19:43:13,499 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715532193594, 'tid': 'b9808804107e11efa098724a8b78ed1e'}
+2024-05-12 19:43:13,513 - INFO - 127.0.0.1 - - [12/May/2024 19:43:13] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-12 19:43:13,702 - INFO - 127.0.0.1 - - [12/May/2024 19:43:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-05-12 19:46:30,044 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-12 19:46:30,095 - INFO -  * Restarting with stat
+2024-05-12 19:46:30,432 - WARNING -  * Debugger is active!
+2024-05-12 19:46:30,437 - INFO -  * Debugger PIN: 907-417-267
+2024-05-12 19:46:34,487 - INFO - Adjusted server time: 1715532399586
+2024-05-12 19:46:36,332 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715532396429, 'tid': '3266cdde107f11efa098724a8b78ed1e'}
+2024-05-12 19:46:36,333 - INFO - 127.0.0.1 - - [12/May/2024 19:46:36] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-12 19:50:44,932 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-12 19:50:44,980 - INFO -  * Restarting with stat
+2024-05-12 19:50:45,364 - WARNING -  * Debugger is active!
+2024-05-12 19:50:45,370 - INFO -  * Debugger PIN: 907-417-267
+2024-05-12 19:50:54,959 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715532655060, 'tid': 'cc8eae04107f11efa098724a8b78ed1e'}
+2024-05-12 19:50:54,961 - INFO - 127.0.0.1 - - [12/May/2024 19:50:54] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-12 19:53:39,720 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-12 19:53:39,808 - INFO -  * Restarting with stat
+2024-05-12 20:00:38,107 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-05-12 20:00:38,108 - INFO - [33mPress CTRL+C to quit[0m
+2024-05-12 20:00:38,114 - INFO -  * Restarting with stat
+2024-05-12 20:00:38,465 - WARNING -  * Debugger is active!
+2024-05-12 20:00:38,470 - INFO -  * Debugger PIN: 907-417-267
+2024-05-12 20:00:45,191 - INFO - Fetched server time: 1715533245295
+2024-05-12 20:00:46,146 - INFO - Token retrieved successfully: 63f1632370b28114502049ed898df0a4
+2024-05-12 20:00:47,134 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715533247237, 'tid': '2d859b3e108111efaae33e3874d12f34'}
+2024-05-12 20:00:47,136 - INFO - 127.0.0.1 - - [12/May/2024 20:00:47] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-12 20:11:02,761 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715533862869, 'tid': '9c775099108211efa098724a8b78ed1e'}
+2024-05-12 20:11:02,763 - INFO - 127.0.0.1 - - [12/May/2024 20:11:02] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-12 20:14:18,136 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-12 20:14:18,225 - INFO -  * Restarting with stat
+2024-05-12 20:14:18,895 - WARNING -  * Debugger is active!
+2024-05-12 20:14:18,901 - INFO -  * Debugger PIN: 907-417-267
+2024-05-12 20:14:21,916 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-12 20:14:21,996 - INFO -  * Restarting with stat
+2024-05-12 20:14:22,494 - WARNING -  * Debugger is active!
+2024-05-12 20:14:22,504 - INFO -  * Debugger PIN: 907-417-267
+2024-05-12 20:14:23,519 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-12 20:14:23,606 - INFO -  * Restarting with stat
+2024-05-12 20:14:24,092 - WARNING -  * Debugger is active!
+2024-05-12 20:14:24,101 - INFO -  * Debugger PIN: 907-417-267
+2024-05-12 20:14:24,125 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-12 20:14:24,194 - INFO -  * Restarting with stat
+2024-05-12 20:14:24,793 - WARNING -  * Debugger is active!
+2024-05-12 20:14:24,798 - INFO -  * Debugger PIN: 907-417-267
+2024-05-12 20:14:35,653 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-05-12 20:14:35,654 - INFO - [33mPress CTRL+C to quit[0m
+2024-05-12 20:14:35,663 - INFO -  * Restarting with stat
+2024-05-12 20:14:36,196 - WARNING -  * Debugger is active!
+2024-05-12 20:14:36,201 - INFO -  * Debugger PIN: 907-417-267
+2024-05-12 20:14:51,684 - INFO - Fetched server time: 1715534091780
+2024-05-12 20:14:52,734 - INFO - Token retrieved successfully: 63f1632370b28114502049ed898df0a4
+2024-05-12 20:14:53,792 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715534093905, 'tid': '262ceb37108311efa6ed16994efa91b4'}
+2024-05-12 20:14:53,794 - INFO - 127.0.0.1 - - [12/May/2024 20:14:53] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-12 22:44:17,536 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-05-12 22:44:17,536 - INFO - [33mPress CTRL+C to quit[0m
+2024-05-12 22:44:17,547 - INFO -  * Restarting with stat
+2024-05-12 22:44:18,023 - WARNING -  * Debugger is active!
+2024-05-12 22:44:18,029 - INFO -  * Debugger PIN: 907-417-267
+2024-05-12 22:44:29,157 - INFO - Fetched server time: 1715543069341
+2024-05-12 22:44:29,970 - INFO - Token retrieved successfully: d40fcd078887f1b526946958e1b9e9c6
+2024-05-12 22:44:30,913 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715543071097, 'tid': '0cffa830109811efa6ed16994efa91b4'}
+2024-05-12 22:44:30,917 - INFO - 127.0.0.1 - - [12/May/2024 22:44:30] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-12 22:44:30,983 - INFO - 127.0.0.1 - - [12/May/2024 22:44:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-05-12 22:50:07,756 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-12 22:50:07,841 - INFO -  * Restarting with stat
+2024-05-12 22:53:20,796 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-05-12 22:53:20,797 - INFO - [33mPress CTRL+C to quit[0m
+2024-05-12 22:53:20,802 - INFO -  * Restarting with stat
+2024-05-12 22:53:21,136 - WARNING -  * Debugger is active!
+2024-05-12 22:53:21,140 - INFO -  * Debugger PIN: 907-417-267
+2024-05-12 22:53:28,514 - INFO - Fetched server time: 1715543608780
+2024-05-12 22:53:28,887 - INFO - Token retrieved successfully: b2ff611ff5404450e30806c0e27aacf8
+2024-05-12 22:53:29,225 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715543609491, 'tid': '4de74943109911ef960bd6dfde92944e'}
+2024-05-12 22:53:29,227 - INFO - 127.0.0.1 - - [12/May/2024 22:53:29] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-12 22:58:16,727 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-12 22:58:16,857 - INFO -  * Restarting with stat
+2024-05-12 22:58:17,307 - WARNING -  * Debugger is active!
+2024-05-12 22:58:17,312 - INFO -  * Debugger PIN: 907-417-267
+2024-05-12 22:58:19,970 - INFO - Fetched server time: 1715543900238
+2024-05-12 22:58:20,401 - INFO - Token retrieved successfully: b2ff611ff5404450e30806c0e27aacf8
+2024-05-12 22:58:20,718 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715543900985, 'tid': 'fba5de99109911efbf2d060d50845642'}
+2024-05-12 22:58:20,719 - INFO - 127.0.0.1 - - [12/May/2024 22:58:20] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-12 23:10:19,762 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-12 23:10:19,810 - INFO -  * Restarting with stat
+2024-05-12 23:15:50,948 - INFO -  * Restarting with stat
+2024-05-12 23:15:51,352 - WARNING -  * Debugger is active!
+2024-05-12 23:15:51,356 - INFO -  * Debugger PIN: 907-417-267
+2024-05-12 23:15:58,293 - INFO - Fetched server time: 1715544958569
+2024-05-12 23:15:58,640 - INFO - Token retrieved successfully: b2ff611ff5404450e30806c0e27aacf8
+2024-05-12 23:15:58,980 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715544959254, 'tid': '726d30ee109c11efa6b23afcb5bfedcf'}
+2024-05-12 23:15:58,982 - INFO - 127.0.0.1 - - [12/May/2024 23:15:58] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-12 23:18:47,720 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-12 23:18:47,767 - INFO -  * Restarting with stat
+2024-05-12 23:18:48,125 - WARNING -  * Debugger is active!
+2024-05-12 23:18:48,131 - INFO -  * Debugger PIN: 907-417-267
+2024-05-12 23:18:51,145 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-12 23:18:51,193 - INFO -  * Restarting with stat
+2024-05-12 23:18:51,512 - WARNING -  * Debugger is active!
+2024-05-12 23:18:51,516 - INFO -  * Debugger PIN: 907-417-267
+2024-05-12 23:18:54,529 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-12 23:18:54,576 - INFO -  * Restarting with stat
+2024-05-12 23:18:54,934 - WARNING -  * Debugger is active!
+2024-05-12 23:18:54,939 - INFO -  * Debugger PIN: 907-417-267
+2024-05-12 23:18:59,803 - INFO - Fetched server time: 1715545140004
+2024-05-12 23:19:00,717 - INFO - Token retrieved successfully: d40fcd078887f1b526946958e1b9e9c6
+2024-05-12 23:19:01,623 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715545141822, 'tid': 'df3ed7a4109c11efa6ed16994efa91b4'}
+2024-05-12 23:19:01,624 - INFO - 127.0.0.1 - - [12/May/2024 23:19:01] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-12 23:23:07,433 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-12 23:23:07,490 - INFO -  * Restarting with stat
+2024-05-12 23:23:07,881 - WARNING -  * Debugger is active!
+2024-05-12 23:23:07,886 - INFO -  * Debugger PIN: 907-417-267
+2024-05-12 23:23:13,482 - INFO - Fetched server time: 1715545393684
+2024-05-12 23:23:14,419 - INFO - Token retrieved successfully: d40fcd078887f1b526946958e1b9e9c6
+2024-05-12 23:23:15,354 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715545395556, 'tid': '767b9c85109d11efa6ed16994efa91b4'}
+2024-05-12 23:23:15,357 - INFO - 127.0.0.1 - - [12/May/2024 23:23:15] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-12 23:24:23,035 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-12 23:24:23,101 - INFO -  * Restarting with stat
+2024-05-12 23:24:23,541 - WARNING -  * Debugger is active!
+2024-05-12 23:24:23,546 - INFO -  * Debugger PIN: 907-417-267
+2024-05-12 23:24:26,823 - INFO - Fetched and adjusted server time: 1715545466026
+2024-05-12 23:24:27,875 - INFO - Token retrieved successfully: d40fcd078887f1b526946958e1b9e9c6
+2024-05-12 23:24:28,791 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715545468992, 'tid': 'a2416598109d11efa6ed16994efa91b4'}
+2024-05-12 23:24:28,792 - INFO - 127.0.0.1 - - [12/May/2024 23:24:28] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-12 23:26:04,756 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-12 23:26:04,824 - INFO -  * Restarting with stat
+2024-05-12 23:26:05,230 - WARNING -  * Debugger is active!
+2024-05-12 23:26:05,234 - INFO -  * Debugger PIN: 907-417-267
+2024-05-12 23:26:11,260 - INFO - Fetched and adjusted server time: 1715545570462
+2024-05-12 23:26:12,008 - INFO - Token retrieved successfully: d40fcd078887f1b526946958e1b9e9c6
+2024-05-12 23:26:12,926 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715545573128, 'tid': 'e05338ff109d11efa6ed16994efa91b4'}
+2024-05-12 23:26:12,929 - INFO - 127.0.0.1 - - [12/May/2024 23:26:12] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-12 23:27:38,418 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-12 23:27:38,466 - INFO -  * Restarting with stat
+2024-05-12 23:27:38,809 - WARNING -  * Debugger is active!
+2024-05-12 23:27:38,813 - INFO -  * Debugger PIN: 907-417-267
+2024-05-12 23:27:44,054 - INFO - Fetched and adjusted server time: 1715545659258
+2024-05-12 23:27:44,815 - INFO - Token retrieved successfully: d40fcd078887f1b526946958e1b9e9c6
+2024-05-12 23:27:45,715 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715545665919, 'tid': '17a22e79109e11efa6ed16994efa91b4'}
+2024-05-12 23:27:45,717 - INFO - 127.0.0.1 - - [12/May/2024 23:27:45] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-12 23:29:08,996 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-12 23:29:09,043 - INFO -  * Restarting with stat
+2024-05-12 23:29:09,419 - WARNING -  * Debugger is active!
+2024-05-12 23:29:09,423 - INFO -  * Debugger PIN: 907-417-267
+2024-05-12 23:29:14,487 - INFO - Fetched and adjusted server time: 1715545744692
+2024-05-12 23:29:15,411 - INFO - Token retrieved successfully: d40fcd078887f1b526946958e1b9e9c6
+2024-05-12 23:29:16,158 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715545756364, 'tid': '4d8aeb9f109e11efa6ed16994efa91b4'}
+2024-05-12 23:29:16,162 - INFO - 127.0.0.1 - - [12/May/2024 23:29:16] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-12 23:30:24,578 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-12 23:30:24,645 - INFO -  * Restarting with stat
+2024-05-12 23:30:25,085 - WARNING -  * Debugger is active!
+2024-05-12 23:30:25,091 - INFO -  * Debugger PIN: 907-417-267
+2024-05-12 23:30:27,728 - INFO - Fetched and adjusted server time: 1715545826933
+2024-05-12 23:30:28,659 - INFO - Token retrieved successfully: d40fcd078887f1b526946958e1b9e9c6
+2024-05-12 23:30:29,585 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715545829787, 'tid': '794e2a50109e11efaae33e3874d12f34'}
+2024-05-12 23:30:29,586 - INFO - 127.0.0.1 - - [12/May/2024 23:30:29] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-13 18:12:50,553 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-05-13 18:12:50,554 - INFO - [33mPress CTRL+C to quit[0m
+2024-05-13 18:12:50,559 - INFO -  * Restarting with stat
+2024-05-13 18:12:50,957 - WARNING -  * Debugger is active!
+2024-05-13 18:12:50,962 - INFO -  * Debugger PIN: 907-417-267
+2024-05-13 18:13:00,345 - INFO - Fetched and adjusted server time: 1715613178885
+2024-05-13 18:13:01,372 - INFO - Token retrieved successfully: a6275176b5e8e490cfcb176565d451e6
+2024-05-13 18:13:02,403 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715613181926, 'tid': '4a4f4a1b113b11efa098724a8b78ed1e'}
+2024-05-13 18:13:02,405 - INFO - 127.0.0.1 - - [13/May/2024 18:13:02] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-13 18:13:02,440 - INFO - 127.0.0.1 - - [13/May/2024 18:13:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-05-13 18:25:42,445 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-13 18:25:42,502 - INFO -  * Restarting with stat
+2024-05-13 18:25:42,925 - WARNING -  * Debugger is active!
+2024-05-13 18:25:42,930 - INFO -  * Debugger PIN: 907-417-267
+2024-05-13 18:25:43,941 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-13 18:25:44,004 - INFO -  * Restarting with stat
+2024-05-13 18:25:44,596 - WARNING -  * Debugger is active!
+2024-05-13 18:25:44,601 - INFO -  * Debugger PIN: 907-417-267
+2024-05-13 18:25:48,615 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-13 18:25:48,682 - INFO -  * Restarting with stat
+2024-05-13 18:25:49,127 - WARNING -  * Debugger is active!
+2024-05-13 18:25:49,133 - INFO -  * Debugger PIN: 907-417-267
+2024-05-13 18:25:53,213 - INFO - Fetched and adjusted server time: 1715613951776
+2024-05-13 18:25:53,971 - INFO - Token retrieved successfully: a6275176b5e8e490cfcb176565d451e6
+2024-05-13 18:25:54,724 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715613954287, 'tid': '16ab9c95113d11efa098724a8b78ed1e'}
+2024-05-13 18:25:54,726 - INFO - 127.0.0.1 - - [13/May/2024 18:25:54] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-13 18:35:38,323 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-13 18:35:38,404 - INFO -  * Restarting with stat
+2024-05-13 18:35:39,004 - WARNING -  * Debugger is active!
+2024-05-13 18:35:39,014 - INFO -  * Debugger PIN: 907-417-267
+2024-05-13 18:35:46,427 - INFO - Time taken to fetch and adjust server time: 803.726318359375 ms
+2024-05-13 18:35:46,427 - INFO - Fetched and adjusted server time: 1715614543000
+2024-05-13 18:35:47,181 - INFO - Token retrieved successfully: a6275176b5e8e490cfcb176565d451e6
+2024-05-13 18:35:48,101 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715614547666, 'tid': '785a483c113e11efa6ed16994efa91b4'}
+2024-05-13 18:35:48,103 - INFO - 127.0.0.1 - - [13/May/2024 18:35:48] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-13 19:08:30,007 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-13 19:08:30,063 - INFO -  * Restarting with stat
+2024-05-13 19:08:30,531 - WARNING -  * Debugger is active!
+2024-05-13 19:08:30,536 - INFO -  * Debugger PIN: 907-417-267
+2024-05-13 19:08:34,558 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-05-13 19:08:34,558 - INFO - [33mPress CTRL+C to quit[0m
+2024-05-13 19:08:34,563 - INFO -  * Restarting with stat
+2024-05-13 19:08:34,923 - WARNING -  * Debugger is active!
+2024-05-13 19:08:34,928 - INFO -  * Debugger PIN: 907-417-267
+2024-05-13 19:09:36,662 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-13 19:09:36,708 - INFO -  * Restarting with stat
+2024-05-13 19:09:37,052 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-13 19:09:37,074 - WARNING -  * Debugger is active!
+2024-05-13 19:09:37,078 - INFO -  * Debugger PIN: 907-417-267
+2024-05-13 19:09:37,101 - INFO -  * Restarting with stat
+2024-05-13 19:09:37,465 - WARNING -  * Debugger is active!
+2024-05-13 19:09:37,469 - INFO -  * Debugger PIN: 907-417-267
+2024-05-13 19:09:46,530 - INFO - Fetched server time: 1715616586260
+2024-05-13 19:09:47,462 - INFO - Token retrieved successfully: a6275176b5e8e490cfcb176565d451e6
+2024-05-13 19:09:48,211 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715616587935, 'tid': '38725843114311efaae33e3874d12f34'}
+2024-05-13 19:09:48,213 - INFO - 127.0.0.1 - - [13/May/2024 19:09:48] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-13 19:13:04,475 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-13 19:13:04,523 - INFO -  * Restarting with stat
+2024-05-13 19:13:04,868 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-13 19:13:04,940 - INFO -  * Restarting with stat
+2024-05-13 19:13:04,954 - WARNING -  * Debugger is active!
+2024-05-13 19:13:04,959 - INFO -  * Debugger PIN: 907-417-267
+2024-05-13 19:13:05,306 - WARNING -  * Debugger is active!
+2024-05-13 19:13:05,310 - INFO -  * Debugger PIN: 907-417-267
+2024-05-13 19:13:12,827 - INFO - Fetched server time: 1715616792571
+2024-05-13 19:13:13,744 - INFO - Token retrieved successfully: a6275176b5e8e490cfcb176565d451e6
+2024-05-13 19:13:14,488 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715616794232, 'tid': 'b36952c4114311efa6ed16994efa91b4'}
+2024-05-13 19:13:14,490 - INFO - 127.0.0.1 - - [13/May/2024 19:13:14] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -
+2024-05-13 19:16:33,360 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-13 19:16:33,406 - INFO -  * Restarting with stat
+2024-05-13 19:16:33,711 - INFO -  * Detected change in 'C:\\xampp\\htdocs\\Test1\\IOTsystem\\app.py', reloading
+2024-05-13 19:16:33,754 - WARNING -  * Debugger is active!
+2024-05-13 19:16:33,758 - INFO -  * Debugger PIN: 907-417-267
+2024-05-13 19:16:33,764 - INFO -  * Restarting with stat
+2024-05-13 19:16:34,157 - WARNING -  * Debugger is active!
+2024-05-13 19:16:34,163 - INFO -  * Debugger PIN: 907-417-267
+2024-05-13 19:16:40,379 - INFO - Fetched and adjusted server time: 1715616998139
+2024-05-13 19:16:40,380 - INFO - Sending token request at server time: 1715616998139
+2024-05-13 19:16:41,294 - INFO - Token retrieved successfully: a6275176b5e8e490cfcb176565d451e6
+2024-05-13 19:16:42,256 - INFO - Response from Tuya: {'code': 1013, 'msg': 'request time is invalid', 'success': False, 't': 1715617002018, 'tid': '2f4077e1114411efaae33e3874d12f34'}
+2024-05-13 19:16:42,257 - INFO - 127.0.0.1 - - [13/May/2024 19:16:42] "GET /sensor_data/bfea7838726f885481awsk HTTP/1.1" 200 -

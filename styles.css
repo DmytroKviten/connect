@@ -1,0 +1,145 @@
+/* Загальні стилі */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #FFFFFF; /* Змінити фон на білий */
+}
+
+/* Шапка */
+.header {
+  background-color: #538ac2;
+  padding: 20px 40px; /* Збільшення відступів шапки */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 15px;
+  height: 50px; /* Встановлено висоту для шапки */
+}
+
+/* Кнопки */
+.button {
+  background-color: #c0c0c0;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.button:hover {
+  background-color: #a0a0a0;
+}
+
+/* Вирівнювання елементів шапки */
+.header .left, .header .center, .header .right {
+  flex: 1;
+}
+
+.header .left {
+  text-align: left;
+}
+
+.header .center {
+  text-align: center;
+  font-size: 1.2em; /* Збільшено розмір шрифту */
+}
+
+.header .right {
+  text-align: right;
+}
+
+#login, #register {
+  text-decoration: none !important; /* Примусове вимкнення підкреслення для цих кнопок */
+}
+
+
+
+
+  .button {
+    background-color: #00475dd9;
+    border: none;
+    padding: 15px 30px; /* Збільшення відступів кнопки */
+    margin: 0 10px; /* Збільшення відстані між кнопками */
+    cursor: pointer;
+    color: white;
+    font-size: 25px; /* Збільшення розміру тексту кнопок */
+    border-radius: 10px;
+    transition: background-color 0.3s; /* Плавне переходження кольору при наведенні */
+    text-decoration: none; /* Прибирає нижнє підкреслення */
+
+  }
+
+  .button:hover {
+    background-color: #a0a0a0;
+  }
+
+
+/* 1 частина сайту */
+.branding {
+  text-align: center;
+  padding: 20px;
+}
+.logo {
+  max-width: 100px; /* Регулюйте за потребою */
+  height: auto;
+}
+.tagline {
+  font-style: italic;
+  color: #555;
+}
+.branding img {
+  max-width: 200px; /* Зменшення зображення */
+  height: auto;
+  display: block;
+  margin: auto; /* Центрування зображення */
+  margin-bottom: 0px;
+}
+.branding h1 {
+  margin-bottom: 0;
+  margin: 20px 0;
+  font-size: 3em; /* Збільшення розміру заголовка */
+  margin-top: 0; /* Зменшений відступ зверху для заголовка */
+}
+.tagline {
+  font-style: italic;
+  color: #555;
+  font-size: 1.5em; /* Збільшення розміру підзаголовка */
+}
+
+
+
+
+.buttons-container {
+  /* Вирівнювання кнопок у вашому контейнері, можливо вам знадобиться налаштувати це */
+  display: flex;
+  justify-content: center; /* Центрує кнопки по горизонталі */
+  gap: 30px; /* Відстань між кнопками */
+}
+
+.custom-button {
+  padding: 30px 50px; /* Задає відступи всередині кнопок */
+  background-color: #0047abd9; /* Колір кнопок */
+  color: white; /* Колір тексту */
+  font-size: 24px;
+  border: none; /* Відсутність обрамлення */
+  border-radius: 4px; /* Закруглені кути */
+  cursor: pointer; /* Курсор у формі пальця, який натискає */
+  transition: background-color 0.3s; /* Плавна зміна кольору при наведенні */
+  margin-bottom: 40px; /* Додати відступ знизу для кнопок */
+
+}
+
+.custom-button:hover {
+  background-color: #838883; /* Колір кнопок при наведенні */
+}
+
+#video-container video {
+  margin-bottom: 100px;
+
+  width: 500%; /* або ви можете встановити конкретний розмір, наприклад 320px */
+  max-width: 880px; /* максимальна ширина відео */
+  height: auto; /* зберігати пропорції */
+  display: block; /* для коректного відображення */
+  margin: 0 auto; /* центрування відео у контейнері */
+}
