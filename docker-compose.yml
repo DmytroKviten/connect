@@ -3,7 +3,7 @@ version: '3.8'
 services:
   web:
     build: .
-    container_name: my-php-site
+    container_name: sait
     ports:
       - "8080:80"
     volumes:
@@ -14,23 +14,23 @@ services:
 
   db:
     image: mysql:8.0
-    container_name: my-mysql
+    container_name: SQL
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: sait
     ports:
-      - "3306:3306"  
+      - "3306:3306"
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     container_name: phpmyadmin
     environment:
-      PMA_HOST: db  
+      PMA_HOST: db
       PMA_PORT: 3306
       MYSQL_ROOT_PASSWORD: root
     ports:
-      - "8083:80"  
+      - "8083:80"
     depends_on:
       - db
     restart: always
