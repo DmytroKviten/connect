@@ -30,8 +30,8 @@
       <!-- Auth buttons -->
       <div class="flex items-center space-x-4">
         @auth
-          <a href="/dashboard" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">DEMO</a>
-          <form method="POST" action="{{ route('logout') }}">
+        <a href="{{ route('demo') }}" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">DEMO</a>
+        <form method="POST" action="{{ route('logout') }}">
             @csrf
             <button type="submit" class="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition">Вийти</button>
           </form>
