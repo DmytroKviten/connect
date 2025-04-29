@@ -1,0 +1,9 @@
+{
+    "name": "CONNECT Demo",
+    "short_name": "Demo",
+    "start_url": "/demo",
+    "display": "standalone",
+    "background_color": "#0e0f11",
+    "theme_color": "#20e3b2",
+    "icons": []
+  }
