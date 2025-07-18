@@ -8,7 +8,7 @@ use App\Http\Controllers\DemoController;
 
 // Головна сторінка
 Route::get('/', function () {
-    return view('home'); // Зараз створимо цей шаблон
+    return view('home'); 
 })->name('home');
 
 Route::get('/register', [RegisterController::class, 'show'])->name('register');
@@ -25,3 +25,6 @@ Route::post('/logout', function () {
 })->name('logout');
 
 Route::get('/demo', [DemoController::class, 'index'])->middleware('auth')->name('demo');
+
+Route::view('/setup', 'setup');
+
