@@ -1,21 +1,21 @@
-# Базуємося на офіційному PHP + Apache
 FROM php:8.2-apache
 
-# Встановимо розширення MySQL
-RUN docker-php-ext-install pdo pdo_mysql
+# PHP-розширення та git/unzip для composer
+RUN apt-get update \
+ && apt-get install -y git unzip \
+ && docker-php-ext-install pdo pdo_mysql
 
-# Увімкнемо модуль rewrite для Laravel (через .htaccess)
+# mod_rewrite потрібен Laravel-у для .htaccess
 RUN a2enmod rewrite
 
-# Копіюємо наш файл VirtualHost із поточної теки в контейнер
+# Наш vhost із DocumentRoot=/var/www/html/public
 COPY 000-default.conf /etc/apache2/sites-available/000-default.conf
 
-# Копіюємо увесь Laravel-код у /var/www/html
-COPY . /var/www/html
+# Робоча папка — збігається з томом
+WORKDIR /var/www/html
 
-# Зробимо власником www-data і роздамо права
-RUN chown -R www-data:www-data /var/www/html && chmod -R 755 /var/www/html
+# Права: достатньо на корінь; під-том весь проєкт
+RUN chown www-data:www-data /var/www/html
 
 EXPOSE 80
-
 CMD ["apache2-foreground"]
