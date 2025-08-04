@@ -1,4 +1,3 @@
-{{-- resources/views/demo/setup.blade.php --}}
 @extends('layouts.base')
 
 @section('content')
@@ -36,29 +35,38 @@
             </button>
         </div>
 
+        {{-- STEP 3 --}}
+        <div id="step3" class="hidden space-y-6 w-full max-w-md text-center">
+            <h2 class="text-xl font-semibold">Пошук пристрою у мережі…</h2>
+            <div id="scan-status" class="text-accent">Зачекайте, йде автоматичне підключення…</div>
+            <div class="flex justify-center items-center mt-6">
+                <svg class="animate-spin h-12 w-12 text-accent" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"/>
+                  <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"/>
+                </svg>
+            </div>
+        </div>
+
     </div>
 @endsection
-
 
 @section('scripts')
 <script src="https://cdn.jsdelivr.net/npm/axios@1/dist/axios.min.js"></script>
 <script>
-/* один раз – щоб XHR надсилали cookie */
 axios.defaults.withCredentials = true;
 
 document.addEventListener('DOMContentLoaded', () => {
-
-    /* елементи */
     const btnScan   = document.getElementById('btn-scan');
     const btnSend   = document.getElementById('btn-send');
     const networks  = document.getElementById('networks');
     const passInput = document.getElementById('wifi-pass');
     const step1     = document.getElementById('step1');
     const step2     = document.getElementById('step2');
+    const step3     = document.getElementById('step3');
     const shellyIp  = '192.168.33.1';
     let   chosenSsid = null;
 
-    /* скан мереж */
+    // Сканування мереж
     btnScan.addEventListener('click', async () => {
         btnScan.disabled = true;
         btnScan.textContent = 'Сканую…';
@@ -83,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    /* вибір SSID */
+    // Вибір SSID
     networks.addEventListener('click', e => {
         const btn = e.target.closest('[data-ssid]');
         if (!btn) return;
@@ -95,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
         btnSend.classList.remove('hidden');
     });
 
-    /* надсилання конфігурації */
+    // Надсилання конфігурації
     btnSend.addEventListener('click', async () => {
         if (!chosenSsid) return alert('Виберіть мережу');
 
@@ -110,8 +118,11 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             btnSend.textContent = 'Готово! Перепідключіть Wi-Fi';
-            setTimeout(() => location.href = '/demo', 3000);
-
+            
+            // Ховаємо step2, показуємо step3
+            step2.classList.add('hidden');
+            step3.classList.remove('hidden');
+            autoDiscoverDevice(); // Запускаємо автоматичний пошук пристрою
         } catch (e) {
             if (e.response?.status === 401) {
                 alert('Сесія закінчилась – увійдіть знову');
@@ -124,6 +135,24 @@ document.addEventListener('DOMContentLoaded', () => {
             btnSend.disabled = false;
         }
     });
+
+    // Сканування підмережі для знаходження Shelly
+    function autoDiscoverDevice() {
+        const scanStatus = document.getElementById('scan-status');
+        axios.post('/device/auto-discover')
+            .then(resp => {
+                const { found, ip, mac } = resp.data;
+                if (found) {
+                    scanStatus.innerHTML = `<span class="text-green-500">Знайдено пристрій!</span><br>IP: <b>${ip}</b><br>MAC: <b>${mac}</b>`;
+                    setTimeout(() => location.href = '/demo', 3000);
+                } else {
+                    scanStatus.innerHTML = `<span class="text-red-500">Пристрій не знайдено. Перевірте, чи він у мережі!</span>`;
+                }
+            })
+            .catch(e => {
+                scanStatus.textContent = 'Сталася помилка під час сканування.';
+            });
+    }
 });
 </script>
 @endsection

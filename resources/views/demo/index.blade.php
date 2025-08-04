@@ -49,35 +49,17 @@
                     </h2>
 
                     {{-- UID (MAC) --}}
-                    <p class="text-sm text-muted mb-4">
+                    <p class="text-sm text-muted">
                         UID: {{ $device->uid }}
                     </p>
 
-                    {{-- показники останнього виміру --}}
-                    @php($r = $device->latestReading)
-                    @if ($r)
-                        <div class="space-y-1 text-sm mb-4">
-                            <p>Потужність:
-                                <span class="font-semibold">
-                                    {{ number_format($r->power_w, 1) }} Вт
-                                </span>
-                            </p>
-                            <p>Напруга:
-                                <span class="font-semibold">
-                                    {{ number_format($r->voltage_v, 1) }} В
-                                </span>
-                            </p>
-                            <p>Енергія:
-                                <span class="font-semibold">
-                                    {{ number_format($r->energy_wh / 1000, 2) }} кВт·год
-                                </span>
-                            </p>
+                    {{-- IP та SSID --}}
+                    <div class="mb-2 flex flex-col text-sm text-neutral-300">
+                        <div>
+                            <span class="font-semibold">IP:</span>
+                            <span>{{ $device->ip ?? 'невідомо' }}</span>
                         </div>
-                    @else
-                        <p class="text-sm text-muted mb-4">
-                            Показники ще не отримані.
-                        </p>
-                    @endif
+                    </div>
 
                     {{-- footer картки --}}
                     <div class="mt-auto flex items-center justify-between pt-4 border-t border-white/5">
@@ -102,4 +84,3 @@
 
 </div>
 @endsection
-
