@@ -1,4 +1,6 @@
 <?php
-// routes/api.php
-//
-// тут більше немає маршрутів – усе перенесено у web-stack
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DeviceController;
+
+Route::post('/device/ping', [DeviceController::class, 'ping']);

@@ -6,6 +6,16 @@ use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 class Kernel extends HttpKernel
 {
+    /**
+     * Глобальні HTTP middleware (застосовуються до всіх запитів).
+     */
+    protected $middleware = [
+        \App\Http\Middleware\TrustProxies::class,
+    ];
+
+    /**
+     * Групи middleware.
+     */
     protected $middlewareGroups = [
 
         /* ───────── Web ───────── */
@@ -20,15 +30,18 @@ class Kernel extends HttpKernel
 
         /* ───────── API ───────── */
         'api' => [
-            \App\Http\Middleware\EncryptCookies::class,                     // ① розшифровує cookie
-            \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class, // ② додає queued cookie
-            \Illuminate\Session\Middleware\StartSession::class,              // ③ відкриває сесію
+            \App\Http\Middleware\EncryptCookies::class,
+            \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
+            \Illuminate\Session\Middleware\StartSession::class,
 
             'throttle:api',
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
     ];
 
+    /**
+     * Індивідуальні middleware, які можна викликати вручну через route або controller.
+     */
     protected $routeMiddleware = [
         'auth'     => \App\Http\Middleware\Authenticate::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,

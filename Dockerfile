@@ -3,8 +3,8 @@ FROM php:8.2-apache
 # PHP-розширення та git/unzip для composer
 RUN apt-get update \
  && apt-get install -y git unzip \
- && docker-php-ext-install pdo pdo_mysql
-
+ && docker-php-ext-install pdo pdo_mysql \
+ && apt-get install -y iputils-ping net-tools
 # mod_rewrite потрібен Laravel-у для .htaccess
 RUN a2enmod rewrite
 
@@ -19,3 +19,4 @@ RUN chown www-data:www-data /var/www/html
 
 EXPOSE 80
 CMD ["apache2-foreground"]
+
