@@ -10,20 +10,30 @@ class Reading extends Model
 {
     use HasFactory;
 
-    /* ↙️ усередині класу – OK */
     protected $fillable = [
         'device_id',
         'power_w',
         'voltage_v',
         'energy_wh',
         'taken_at',
+        'mode',
     ];
 
-    public $timestamps = false;   // ми самі пишемо taken_at
+    // У таблиці немає created_at/updated_at
+    public $timestamps = false;
 
-    /* зв'язок ↑ optional */
+    // Явні типи + дата
+    protected $casts = [
+        'power_w'   => 'float',
+        'voltage_v' => 'float',
+        'energy_wh' => 'integer',
+        'taken_at'  => 'datetime',
+        'mode'      => 'string',
+    ];
+
     public function device(): BelongsTo
     {
         return $this->belongsTo(Device::class);
     }
 }
+

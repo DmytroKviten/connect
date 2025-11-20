@@ -12,6 +12,6 @@ class VerifyCsrfToken extends Middleware
      * @var array<int, string>
      */
     protected $except = [
-        // 'api/*',  // ← за потреби можна вимкнути CSRF для всіх API
+        'api/ingest',
     ];
 }
