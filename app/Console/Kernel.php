@@ -7,19 +7,30 @@ use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
 class Kernel extends ConsoleKernel
 {
-   
-    protected function commands(): void
-    {
-    }
-
+    /**
+     * Планувальник 
+     */
     protected function schedule(Schedule $schedule): void
     {
-        $schedule->command('sockets:poll')->everyFiveMinutes();
+        if ((bool) env('ENABLE_LARAVEL_SCHEDULER', false)) {
+            $schedule->command('shelly:poll')
+                ->everyMinute()
+                ->withoutOverlapping()
+                ->runInBackground();
+        }
     }
 
-protected $commands = [
-    \App\Console\Commands\RefreshShellyIp::class,
-];
+    /**
+     * Реєстрація консольних команд.
+     */
+    protected function commands(): void
+    {
+        // Підвантажуємо класи команд PollShelly 
+        $this->load(__DIR__ . '/Commands');
 
-
+        $consoleRoutes = base_path('routes/console.php');
+        if (is_file($consoleRoutes)) {
+            require $consoleRoutes;
+        }
+    }
 }

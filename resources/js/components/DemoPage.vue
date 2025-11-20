@@ -2,7 +2,6 @@
   <div class="min-h-screen flex flex-col text-white font-sans antialiased selection:bg-accent/30">
     <!-- HEADER -->
     <header class="fixed inset-x-0 top-0 h-16 px-6 flex items-center bg-glass/70 backdrop-blur shadow-md z-30">
-      <!-- бургер -->
       <button
         aria-label="Open the menu"
         class="p-2 mr-4 rounded hover:bg-white/10 focus-visible:outline focus-visible:outline-accent"
@@ -25,9 +24,9 @@
         CONNECT
       </span>
 
-      <a href="/devices" class="ml-auto text-sm font-semibold text-white transition-colors hover:text-accent focus-visible:outline focus-visible:outline-accent">
+      <router-link to="/devices" class="ml-auto text-sm font-semibold text-white transition-colors hover:text-accent focus-visible:outline focus-visible:outline-accent">
         Connected&nbsp;devices
-      </a>
+      </router-link>
     </header>
 
     <!-- SIDEBAR -->
@@ -36,14 +35,13 @@
       :class="sidebarOpen ? 'translate-x-0 pointer-events-auto' : '-translate-x-full pointer-events-none'"
     >
       <nav class="flex flex-col gap-3">
-        <a href="#setup" class="nav-item" @click="toggleSidebar">⚙️ Налаштування</a>
-        <a href="#about" class="nav-item" @click="toggleSidebar">ℹ️ Про сайт</a>
+        <router-link to="/setup" class="nav-item" @click="toggleSidebar">⚙️ Налаштування</router-link>
+        <router-link to="/about" class="nav-item" @click="toggleSidebar">ℹ️ Про сайт</router-link>
       </nav>
     </aside>
 
     <!-- MAIN -->
     <main class="flex-1 pt-20">
-      <!-- Опис -->
       <section id="about" class="px-6 py-16 text-center bg-glass/40 backdrop-blur md:rounded-b-3xl shadow-xl max-w-6xl mx-auto">
         <h1 class="text-3xl md:text-5xl font-extrabold">Quick connect&nbsp;IoT device wizard</h1>
         <p class="mt-4 text-muted max-w-3xl mx-auto md:text-lg">
@@ -51,7 +49,6 @@
         </p>
       </section>
 
-      <!-- селектори + превʼю -->
       <section id="setup" class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-8 items-start">
         <!-- селектори -->
         <div>
@@ -61,7 +58,7 @@
             <div>
               <label class="block mb-1 text-sm text-muted" for="selCategory">Category</label>
               <select id="selCategory" class="select" v-model="selectedCategory">
-                <option value="" disabled selected>— select —</option>
+                <option :value="''" disabled>— select —</option>
                 <option v-for="(cat, catKey) in DATA" :key="catKey" :value="catKey">
                   {{ cat.label }}
                 </option>
@@ -71,7 +68,7 @@
             <div>
               <label class="block mb-1 text-sm text-muted" for="selBrand">Brand</label>
               <select id="selBrand" class="select" v-model="selectedBrand" :disabled="!selectedCategory">
-                <option value="" disabled selected>— виберіть —</option>
+                <option :value="''" disabled>— виберіть —</option>
                 <option
                   v-for="(brand, brandKey) in selectedCategory ? DATA[selectedCategory].brands : {}"
                   :key="brandKey"
@@ -85,7 +82,7 @@
             <div>
               <label class="block mb-1 text-sm text-muted" for="selModel">Model</label>
               <select id="selModel" class="select" v-model="selectedModel" :disabled="!selectedBrand">
-                <option value="" disabled selected>— виберіть —</option>
+                <option :value="''" disabled>— виберіть —</option>
                 <option
                   v-for="(modelLabel, modelKey) in selectedBrand ? DATA[selectedCategory].brands[selectedBrand].models : {}"
                   :key="modelKey"
@@ -97,21 +94,26 @@
             </div>
           </div>
         </div>
+
         <!-- фото + кнопка -->
         <div class="flex flex-col items-center text-center md:mt-10 mt-12">
           <img
-            :src="deviceImg"
-            alt=""
+            :src="imgSrc"
+            :alt="imgAlt"
             class="w-72 h-72 object-contain rounded-2xl border border-white/10 shadow-lg mb-6"
+            @error="onImgError"
           />
 
-          <a
+          <button
             class="btn"
-            :class="{ 'opacity-0 pointer-events-none': !readyToGo }"
-            :href="readyToGo ? '/setup' : null"
+            :disabled="!readyToGo || loading"
+            @click="goSetup"
           >
-            Go to the settings
-          </a>
+            <span v-if="!loading">Go to the settings</span>
+            <span v-else>Loading…</span>
+          </button>
+
+          <p v-if="msg" class="mt-3 text-sm text-muted">{{ msg }}</p>
         </div>
       </section>
     </main>
@@ -119,9 +121,18 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, watch } from 'vue'
+import axios from 'axios'
+import { useRouter } from 'vue-router'
 
-// Дані пристроїв
+const router = useRouter()
+
+/* ---------- auth header (Sanctum token з /api/login) ---------- */
+const TOKEN_KEY = 'token'
+const token = localStorage.getItem(TOKEN_KEY)
+if (token) axios.defaults.headers.common['Authorization'] = `Bearer ${token}`
+
+/* ---------- Дані пристроїв ---------- */
 const DATA = {
   sockets: {
     label:'Sockets',
@@ -148,27 +159,67 @@ const DATA = {
   }
 }
 
-// реактивні змінні
+/* ---------- state ---------- */
 const selectedCategory = ref('')
 const selectedBrand    = ref('')
 const selectedModel    = ref('')
+const sidebarOpen      = ref(false)
+const loading          = ref(false)
+const msg              = ref('')
+const fallbackImg      = '/img/devices/placeholder.jpg'
 
-// Бургер-меню
-const sidebarOpen = ref(false)
-function toggleSidebar() {
-  sidebarOpen.value = !sidebarOpen.value
-}
+/* ---------- UI helpers ---------- */
+function toggleSidebar(){ sidebarOpen.value = !sidebarOpen.value }
 
-// Фото та стан кнопки
-const deviceImg = computed(() => {
-  if (selectedCategory.value && selectedBrand.value && selectedModel.value)
-    return `/img/devices/${selectedCategory.value}-${selectedBrand.value}-${selectedModel.value}.jpg`
-  return '/img/devices/placeholder.jpg'
-})
+const imgPath = computed(() =>
+  selectedCategory.value && selectedBrand.value && selectedModel.value
+    ? `/img/devices/${selectedCategory.value}-${selectedBrand.value}-${selectedModel.value}.jpg`
+    : fallbackImg
+)
+
+const imgSrc = ref(imgPath.value)
+const imgAlt = computed(() =>
+  selectedCategory.value && selectedBrand.value && selectedModel.value
+    ? `${selectedCategory.value}/${selectedBrand.value}/${selectedModel.value}`
+    : 'Device preview'
+)
+
+watch(imgPath, (p) => { imgSrc.value = p })
+function onImgError(){ imgSrc.value = fallbackImg }
 
 const readyToGo = computed(() =>
-  selectedCategory.value && selectedBrand.value && selectedModel.value
+  !!(selectedCategory.value && selectedBrand.value && selectedModel.value)
 )
+
+/* ---------- create setup token & go ---------- */
+async function goSetup(){
+  msg.value = ''
+  if (!readyToGo.value) return
+  if (!token) {
+    router.push({ path: '/login', query: { redirect: location.pathname } })
+    return
+  }
+  loading.value = true
+  try {
+    const r = await axios.post('/api/setup-token', {}, { headers: { Accept:'application/json' } })
+    const tk = r.data?.token
+    if (!tk) throw new Error('No token from server')
+
+    // передамо вибір у query — сторінка /setup зможе одразу викликати ProvisionController::claim
+    const q = new URLSearchParams({
+      category: selectedCategory.value,
+      brand: selectedBrand.value,
+      model: selectedModel.value,
+      token: tk
+    }).toString()
+
+    router.push(`/setup?${q}`)
+  } catch(e){
+    msg.value = 'Не вдалося створити токен налаштування. Увійдіть у профіль і спробуйте знову.'
+  } finally {
+    loading.value = false
+  }
+}
 </script>
 
 <style scoped>
@@ -182,6 +233,7 @@ body::before {
     radial-gradient(circle at 70% 90%, rgba(32,227,178,.15), transparent 60%),
     #0e0f11;
 }
+.text-muted { color: #8c96a7; }
 .nav-item {
   display: block;
   padding: .75rem 1rem;
@@ -189,9 +241,7 @@ body::before {
   transition: .2s background-color;
 }
 .nav-item:hover,
-.nav-item:focus-visible {
-  background-color: rgba(32,227,178,.1);
-}
+.nav-item:focus-visible { background-color: rgba(32,227,178,.1); }
 .select {
   width: 100%;
   color: #fff;
@@ -213,13 +263,8 @@ body::before {
   outline: none;
   box-shadow: 0 0 0 2px rgba(32,227,178,.45);
 }
-.select option {
-  background: #1b1d22;
-  color: #e5e7eb;
-}
-.select option:disabled {
-  color: #6b7280;
-}
+.select option { background: #1b1d22; color: #e5e7eb; }
+.select option:disabled { color: #6b7280; }
 .btn {
   display: inline-flex;
   align-items: center;
@@ -233,5 +278,5 @@ body::before {
   transition: .2s background-color;
 }
 .btn:hover { background: #129b80; }
-.btn:disabled { opacity: .25; pointer-events: none; }
+.btn:disabled { opacity: .5; pointer-events: none; }
 </style>
