@@ -263,8 +263,9 @@ class DeviceIngestController extends Controller
             $payload = [
                 'device_id' => $device->id,
                 'taken_at'  => $data['taken_at'],
-                'power_w'   => Arr::get($data, 'power_w')   !== null ? (float)$data['power_w']   : null,
-                'voltage_v' => Arr::get($data, 'voltage_v') !== null ? (float)$data['voltage_v'] : null,
+                'power_w'   => Arr::get($data, 'power_w')   !== null ? (float)$data['power_w']   : 0.0,
+                // DB має NOT NULL по voltage_v, тому ставимо 0 як дефолт, якщо не прийшло
+                'voltage_v' => Arr::get($data, 'voltage_v') !== null ? (float)$data['voltage_v'] : 0.0,
                 'energy_wh' => Arr::get($data, 'energy_wh') !== null ? (int) round($data['energy_wh']) : null,
             ];
             $payload['mode'] = PowerModeClassifier::classify($payload['power_w']);
