@@ -123,6 +123,12 @@ const generationOptions = [
   { label: '3 days', hours: 72 },
   { label: '1 week', hours: 168 },
 ]
+const RATE_LIMIT_DELAY_MS = 300
+const MAX_RETRY_429 = 2
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms))
+}
 const selectedGenerationHours = ref(generationOptions[0].hours)
 const selectedGenerationLabel = computed(() => {
   const opt = generationOptions.find(o => o.hours === Number(selectedGenerationHours.value))
@@ -355,18 +361,32 @@ async function generateSyntheticData() {
   }
 
   try {
-    await Promise.all(
-      points.map(p =>
-        axios.post('/api/ingest', {
-          device_id: p.device_id,
-          mac: p.mac,
-          power_w: p.power_w,
-          voltage_v: p.voltage_v,
-          energy_wh: p.energy_wh,
-          taken_at: p.taken_at,
-        })
-      )
-    )
+    for (const p of points) {
+      let attempt = 0
+      while (attempt <= MAX_RETRY_429) {
+        try {
+          await axios.post('/api/ingest', {
+            device_id: p.device_id,
+            mac: p.mac,
+            power_w: p.power_w,
+            voltage_v: p.voltage_v,
+            energy_wh: p.energy_wh,
+            taken_at: p.taken_at,
+          })
+          break
+        } catch (e) {
+          const status = e?.response?.status
+          if (status === 429 && attempt < MAX_RETRY_429) {
+            const retryAfter = Number(e?.response?.headers?.['retry-after'] ?? 1)
+            await sleep(Math.max(retryAfter, 1) * 1000)
+            attempt++
+            continue
+          }
+          throw e
+        }
+      }
+      await sleep(RATE_LIMIT_DELAY_MS)
+    }
 
     appendChartPoints(points)
 
